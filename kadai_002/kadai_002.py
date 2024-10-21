@@ -29,8 +29,9 @@ print(main_text)
 
 main_text = re.sub(r"[\u3000 \n \r]", "", main_text)
 print(main_text)
-#%%
-url = "http://svn.sourceforge.jp/svnroot/slothlib/CSharp/Version1/SlothLib/NLP/Filter/StopWord/word/Japanese.txt"
+
+#url = "http://svn.sourceforge.jp/svnroot/slothlib/CSharp/Version1/SlothLib/NLP/Filter/StopWord/word/Japanese.txt"
+url = "https://github.com/watson-developer-cloud/doc-tutorial-downloads/blob/master/discovery-data/custom_stopwords_ja.json"
 response = request.urlopen(url)
 soup = BeautifulSoup(response)
 response.close()
